@@ -1,0 +1,17 @@
+*.toc
+*.aux
+*.log
+*.synctex.gz
+*.tks
+*.out
+*.dvi
+*.log
+*.gnuplot
+*.fdb_latexmk
+*.fls
+*.bbl
+*.blg
+*.bcf
+*.nav
+*.run.xml
+*.snm

@@ -1,0 +1,51 @@
+\documentclass[mathserif]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{etoolbox}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{tcolorbox}
+\usepackage{parskip}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage{mathrsfs}
+\usepackage{physics}
+\usepackage{tikz, tikz-cd}
+\usepackage[citestyle=nature]{biblatex}
+\usepackage{tensor}
+\newcommand{\e}{\mathrm{e}}
+
+\renewcommand\thefootnote{\textcolor{red!50!white}{\arabic{footnote}}}
+
+\mdfdefinestyle{FagKom}{%
+	linecolor=black,
+	outerlinewidth=1pt,
+	roundcorner=3pt,
+	innertopmargin=7pt,
+	innerbottommargin=7pt,
+	innerrightmargin=10pt,
+	innerleftmargin=10pt,
+	backgroundcolor=black!60!white,
+}
+
+\usebackgroundtemplate{%             declare it
+	\tikz[overlay,remember picture] \node[opacity=1, at=(current page.center)] {
+		\includegraphics[height=\paperheight]{img/bakgrunn.png}};}
+
+
+\setbeamertemplate{footline}[frame number]{}
+% Fjerner navigasjonsbaren nederst
+\setbeamertemplate{navigation symbols}{}
+% Fjerner navigasjonssymbolene
+
+\begin{document}
+	\color{white}
+%	\input{tex/template}
+	\input{tex/ehrenfest}
+	
+	
+\end{document}
+
