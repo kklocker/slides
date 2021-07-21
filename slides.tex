@@ -1,11 +1,12 @@
 \documentclass[mathserif]{beamer}
-
+%\usefonttheme{serif}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{etoolbox}
 \usepackage{graphicx}
 \usepackage{xcolor}
+\usepackage{transparent}
 \usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage{tcolorbox}
@@ -16,24 +17,22 @@
 \usepackage{tikz, tikz-cd}
 \usepackage[citestyle=nature]{biblatex}
 \usepackage{tensor}
+\usepackage[absolute,overlay]{textpos}
 \newcommand{\e}{\mathrm{e}}
 
 \renewcommand\thefootnote{\textcolor{red!50!white}{\arabic{footnote}}}
 
-\mdfdefinestyle{FagKom}{%
-	linecolor=black,
-	outerlinewidth=1pt,
-	roundcorner=3pt,
-	innertopmargin=7pt,
-	innerbottommargin=7pt,
-	innerrightmargin=10pt,
-	innerleftmargin=10pt,
-	backgroundcolor=black!60!white,
-}
+\newcommand\FrameText[1]{%https://tex.stackexchange.com/a/32990/191229
+	\begin{textblock*}{\paperwidth}(0pt,\textheight)
+		\vspace{-2em}
+		\raggedleft #1\hspace{2em}
+\end{textblock*}}
 
-\usebackgroundtemplate{%             declare it
-	\tikz[overlay,remember picture] \node[opacity=1, at=(current page.center)] {
-		\includegraphics[height=\paperheight]{img/bakgrunn.png}};}
+
+\setbeamercolor{background canvas}{bg=black}
+\usebackgroundtemplate{\tikz[overlay,remember picture] \node[opacity=1, at=(current page.center)] {\includegraphics[height=\paperheight]{img/bakgrunn_plain.png}};
+\FrameText{\href{https://www.twitter.com/Karlockert}{{\transparent{0.4}{@karlockert}}}}
+}
 
 
 \setbeamertemplate{footline}[frame number]{}
@@ -45,6 +44,7 @@
 	\color{white}
 %	\input{tex/template}
 	\input{tex/ehrenfest}
+
 	
 	
 \end{document}
