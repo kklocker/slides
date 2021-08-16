@@ -48,14 +48,45 @@
 	{
 			\begin{align*}
 					\Delta_k &= -\sum_{k'}V_{kk'}\Delta_{k'}\chi_{k'} \\
-					\chi_{k} &= \frac{1}{\sqrt{\varepsilon_k^2 + \Delta_k^2}}\tanh(\frac{\beta}{2}\sqrt{\varepsilon_k^2 + \Delta_k^2}).
+					\chi_{k} &= \frac{1}{\sqrt{\varepsilon_k^2 + \Delta_k^2}}\tanh(\frac{\beta}{2}\sqrt{\varepsilon_k^2 + \Delta_k^2}),
 			\end{align*}
 
 	}
 	
 	\begin{block}{}
 		\color{white}
+		where $\beta = \frac{1}{k_BT}$.
 		This is a ``gap''-equation precisely because the condensation of Cooper pairs opens a gap $\Delta_k$ in the electronic excitation spectrum. A goal of modern physics is to find systems whose superconducting gap is as large as possible. 
+		
+		
+	\end{block}
+	
+	
+\end{frame}
+
+
+\begin{frame}[noframenumbering, plain]
+	\begin{block}{\color{white}\textbf{\Large{
+					%
+					Superconductivity - BCS theory (3)
+					%	
+		}}}
+		\vspace{-10pt}\rule{\textwidth}{0.5pt}
+		\color{white}
+		
+		The computation of $\Delta_k$ often requires heavy numerical computations, but some further analytic work can be done by assuming a constant attractive potential up to a Debye energy, where it is taken to be zero. 
+		Remarkably, it turns out that the ratio of the gap $\Delta_k$ at zero temperature to the critical temperature (the temperature where $\Delta_k = 0$) is a purely numerical constant given by
+		
+	\end{block}
+	{
+		\begin{equation*} 
+			\frac{\Delta(T=0)}{k_B T_C} = \pi\e^{-\gamma}, 
+		\end{equation*}
+	}
+	
+	\begin{block}{}
+		\color{white}
+		where $\gamma$ is the Euler-Mascheroni constant. This constant fits fairly well with the experimentally observed values for several materials, and reason to celebrate the BCS - theory as a whole. 
 		
 		
 	\end{block}
