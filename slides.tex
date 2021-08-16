@@ -32,7 +32,7 @@
 
 \setbeamercolor{background canvas}{bg=black}
 \usebackgroundtemplate{\tikz[overlay,remember picture] \node[opacity=1, at=(current page.center)] {\includegraphics[height=\paperheight]{img/bakgrunn_plain.png}};
-\FrameText{\href{https://www.twitter.com/Karlockert}{{\transparent{0.4}{@karlockert}}}}
+\FrameText{\href{https://www.twitter.com/Karlockert}{{\transparent{0.4}{\color{cyan!70!white}@karlockert}}}}
 }
 
 
@@ -47,6 +47,9 @@
 	\input{tex/ehrenfest}
 	\input{tex/hubbard_model}
 	\input{tex/hubbard-stratonovich}
+	
+	\section{Superconductivity}
+	\input{tex/BCS.tex}
 	
 \end{document}
 
