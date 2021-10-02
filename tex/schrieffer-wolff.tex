@@ -1,0 +1,34 @@
+%\usebackgroundtemplate{%             declare it
+	%	\tikz[overlay,remember picture] \node[opacity=1, at=(current page.center)] {
+		%		\includegraphics[height=\paperheight]{img/bakgrunn.png}};}
+
+\begin{frame}[noframenumbering, plain]
+	\begin{block}{\color{white}\textbf{\Large{
+				Schrieffer-Wolff transformation
+		}}}
+		\vspace{-10pt}\rule{\textwidth}{0.5pt}
+		\color{white}
+		We have seen that attractive interactions between electrons give rise to a condensation of Cooper pairs and a finite gap in the electron band structure. 
+		Kohn \& Luttinger proposed in 1965 a Cooper pairing mechanism with the assumption that the effective interactions between electrons is attractive. This mechanism is obtained by what is now called the Schrieffer-Wolff transformation, a unitary transformation of the interacting Hamiltonian
+	\end{block}
+	{\large
+		\vspace{-2em}
+		\begin{align*}
+			\mathcal{H}' &= \e^{-S}\mathcal{H}\e^{S} \\
+			&= \mathcal{H}_0 + V + \comm{\mathcal{H}}{S} + \frac{1}{2}\comm{\comm{\mathcal{H}}{S}}{S} +\dots
+		\end{align*}
+	}
+	
+	\begin{block}{}
+		\color{white}
+		\vspace{-3em}
+		By choosing $S$ such that $\comm{\mathcal{H}_0}{S} = -V$, we obtain to $\order{V^2}$
+\vspace{-1em}
+		\begin{equation*}
+				\mathcal{H}' = \mathcal{H}_0 + \frac{1}{2}\comm{V}{S} \equiv  \mathcal{H}_0 + V'
+		\end{equation*}
+Although this looks pretty similar to the starting point, this transformation is the first step of obtaining a gap equation for finite $T$, with unrestricted scattering momenta!	
+\end{block}
+	
+	
+\end{frame}

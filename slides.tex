@@ -15,10 +15,11 @@
 \usepackage{mathrsfs}
 \usepackage{physics}
 \usepackage{tikz, tikz-cd}
-\usepackage[citestyle=nature]{biblatex}
+%\usepackage[citestyle=nature]{biblatex}
 \usepackage{tensor}
 \usepackage[absolute,overlay]{textpos}
 \usepackage{tcolorbox}
+\usepackage{bibentry}
 \newcommand{\e}{\mathrm{e}}
 
 \renewcommand\thefootnote{\textcolor{red!50!white}{\arabic{footnote}}}
@@ -41,6 +42,8 @@
 \setbeamertemplate{navigation symbols}{}
 % Fjerner navigasjonssymbolene
 
+%\addbibresource{bib.bib}
+
 \begin{document}
 	\color{white}
 	\input{tex/template}
@@ -50,6 +53,9 @@
 	
 	\section{Superconductivity}
 	\input{tex/BCS.tex}
+	\input{tex/schrieffer-wolff.tex}
 	
+	\bibliography{bib.bib}
+
 \end{document}
 
