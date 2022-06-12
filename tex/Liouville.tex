@@ -1,0 +1,32 @@
+%\usebackgroundtemplate{%             declare it
+	%	\tikz[overlay,remember picture] \node[opacity=1, at=(current page.center)] {
+		%		\includegraphics[height=\paperheight]{img/bakgrunn.png}};}
+
+\begin{frame}[noframenumbering, plain]
+	\begin{block}{\color{white}\textbf{\Large{
+					%
+				    Liouville's theorem (1838)
+					%	
+		}}}
+		\vspace{-10pt}\rule{\textwidth}{0.5pt}
+		\color{white}
+		
+	Liouville's theorem is is a key insight in Hamiltonian mechanics, and a fundamental theorem of statistical physics. It states that under canonical transformations, an arbitrary volume of phase space is left invariant.
+
+	\end{block}
+	{\large
+		
+		\begin{equation*} 
+			\pdv{\rho}{t} + \sum_k\left(\pdv{\rho}{q_k}\pdv{q_k}{t} + \pdv{\rho}{p_k}\pdv{p_k}{t}\right) = 0 
+		\end{equation*}
+	}
+	
+	\begin{block}{}
+		\color{white}
+		Here, $\rho$ is the phase space density, the number of state configurations inside a given phase space volume. $q_k$ and $p_k$ are canonical coordinates and momenta, respectively. 
+		You may recognize the second term as the Poisson bracket $\{\rho, H\}$
+		
+	\end{block}
+	
+	
+\end{frame}
