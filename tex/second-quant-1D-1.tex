@@ -1,0 +1,33 @@
+%\usebackgroundtemplate{%             declare it
+	%	\tikz[overlay,remember picture] \node[opacity=1, at=(current page.center)] {
+		%		\includegraphics[height=\paperheight]{img/bakgrunn.png}};}
+
+\begin{frame}[noframenumbering, plain]
+	\begin{block}{\color{white}\textbf{\Large{
+					%
+					Field Operators in Many-Body QM
+					%	
+		}}}
+		\vspace{-10pt}\rule{\textwidth}{0.5pt}
+		\color{white}
+		
+		The field operators of a system is written as the single-particle wave function times a creation / annihilation operator which increases or decreases the occupancy of said state, summed over all available states in the system. 
+	\end{block}
+	{\large
+		
+		\begin{equation*} 
+			\psi^\dagger(x, t) = \sum\limits_{\alpha}\varphi^{*}_\alpha(x)c^{\dagger}_{\alpha}(t)
+		\end{equation*}
+	}
+	
+	\begin{block}{}
+		\color{white}
+		The time-dependency of $c_\alpha^\dagger$ is determined by the Hamiltonian of the system, and is in the Heisenberg picture written as
+		\begin{equation*}
+			c_\alpha^\dagger(t) = \e^{i\hat{H}t}c_\alpha^\dagger\e^{-i\hat{H}t}
+		\end{equation*}
+	(with $\hbar  = 1$)
+	\end{block}
+	
+	
+\end{frame}
